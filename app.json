@@ -1,0 +1,72 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "backgroundColor": "#FFFFFF",
+    "selectedColor": "#555555",
+    "borderStyle": "black",
+    "list": [
+      {
+        "text": "锻炼",
+        "pagePath": "pages/members/exercise/home/main",
+        "iconPath": "/static/images/tabs/tab_icon_exercise_def@3x.png",
+        "selectedIconPath": "/static/images/tabs/tab_icon_exercise_selected@3x.png"
+      },
+      {
+        "text": "会所",
+        "pagePath": "pages/members/clubs/home/main",
+        "iconPath": "/static/images/tabs/tab_icon_club_def@3x.png",
+        "selectedIconPath": "/static/images/tabs/tab_icon_club_selected@3x.png"
+      },
+      {
+        "text": "预约",
+        "pagePath": "pages/members/appointment/home/main",
+        "iconPath": "/static/images/tabs/tab_icon_order_def@3x.png",
+        "selectedIconPath": "/static/images/tabs/tab_icon_order_selected@3x.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/members/percenter/home/main",
+        "iconPath": "/static/images/tabs/tab_icon_personal_center_def@3x.png",
+        "selectedIconPath": "/static/images/tabs/tab_icon_personal_center_selected@3x.png"
+      }
+    ],
+    "items": [
+      {
+        "name": "锻炼",
+        "pagePath": "pages/members/exercise/home/main",
+        "icon": "/static/images/tabs/tab_icon_exercise_def@3x.png",
+        "activeIcon": "/static/images/tabs/tab_icon_exercise_selected@3x.png"
+      },
+      {
+        "name": "会所",
+        "pagePath": "pages/members/clubs/home/main",
+        "icon": "/static/images/tabs/tab_icon_club_def@3x.png",
+        "activeIcon": "/static/images/tabs/tab_icon_club_selected@3x.png"
+      },
+      {
+        "name": "预约",
+        "pagePath": "pages/members/appointment/home/main",
+        "icon": "/static/images/tabs/tab_icon_order_def@3x.png",
+        "activeIcon": "/static/images/tabs/tab_icon_order_selected@3x.png"
+      },
+      {
+        "name": "我的",
+        "pagePath": "pages/members/percenter/home/main",
+        "icon": "/static/images/tabs/tab_icon_personal_center_def@3x.png",
+        "activeIcon": "/static/images/tabs/tab_icon_personal_center_selected@3x.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "sitemapLocation": "sitemap36.json"
+}
