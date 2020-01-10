@@ -8,8 +8,6 @@ Component({
       type: Number,
       value: 0,
       observer (newv, oldV) {
-        console.log(newv)
-        console.log(oldV)
       }
     },
     tabs: {
@@ -38,7 +36,7 @@ Component({
    */
   methods: {
     handlerItem (e) {
-      console.log(e)
+      // 向父组件传递事件和数据
       this.triggerEvent('tabClick', e.currentTarget.dataset, {})
     }
   }

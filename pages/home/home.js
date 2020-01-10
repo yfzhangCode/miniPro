@@ -1,40 +1,51 @@
-import request from './../../http/index/api.js'
-const app = getApp()
+// 引入 api 类
+import userApi from '../../http/index/user'
 Page({
-
   /**
-   * 页面的初始数据
+   * 定义基础数据
    */
   data: {
-    title: "首页"
+    bannerList: [],
+    recommendList: [],
+    tabIndex: 0,
+    tabs: ['流行', '精选', '新款']
   },
-
   /**
-   * 生命周期函数--监听页面加载
+   * 监听页面得加载
+   * 
    */
-  onLoad: function (options) {
-    let option = {
-      url: 'http://123.207.32.32:8000/api/w1/home/data',
-      method: 'GET',
-      data: {
-        type: 'sell',
-        page: 1
-      }
+  // 登录
+  onLoad () {
+    // 获取数据
+    this.getHomeData()
+  },
+  // 获取首页数据
+  getHomeData() {
+    // 获取数据
+    let opt = {
+      token: ''
     }
-    request(option).then((res) => {
+    userApi._getHomeData(opt).then((res) => {
       console.log(res)
+      // 获取首页数据
+      const bannerL = res.data.banner.list
+      const recommendL = res.data.recommend.list
+
+      // 保存数据
+      this.setData({
+        bannerList: bannerL,
+        recommendList: recommendL
+      })
     }).catch((err) => {
-      cosole.log(err)
+      console.log(err)
     })
   },
-  // 登录
-  login () {
-    app.login()
-  },
-  // 跳转页面
-  nextPgae () {
-    wx.navigateTo({
-      url: '../category/category',
+  // tab 切换
+  tabClick (e) {
+    // 设置当前标题
+    const currentIndex = e.detail.index
+    this.setData({
+      tabIndex: currentIndex
     })
   }
 })

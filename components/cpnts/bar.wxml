@@ -1,5 +1,0 @@
-<!--components/cpnts/bar.wxml-->
-<view class="title">我是{{title}}</view>
-<view class="content">我是内容</view>
-<button bindtap="handlerEmit">事件传递</button>
-<view>{{counter}}</view>

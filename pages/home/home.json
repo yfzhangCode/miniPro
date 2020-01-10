@@ -1,8 +1,10 @@
 {
   "usingComponents": {
-    "bar": "/components/cpnts/bar",
-    "tab-nav": "/components/tabnav/tabnav",
-    "tab-control": "/components/tabcontrol/tabcontrol"
+    "w-swiper": "/components/common/swiper/swiper",
+    "w-recommend": "./childrenCpns/w-recommend/w-recommend",
+    "w-popular": "./childrenCpns/w-popular/w-popular",
+    "tab-nav": "/components/common/tabnav/tabnav",
+    "tab-control": "/components/common/tabcontrol/tabcontrol"
   },
-  "navigationBarTitleText": "首页"
+  "navigationBarTitleText": "购物街"
 }

@@ -1,4 +1,4 @@
-import request from './http/index/api.js'
+import userApi from './http/index/user'
 //app.js
 App({
   onLaunch () {
@@ -20,7 +20,7 @@ App({
       data: {},
       token: token
     }
-    request(option).then((res) => {
+    userApi.request(option).then((res) => {
       console.log(res)
       console.log('已登录')
     }).catch((err) => {
@@ -39,7 +39,7 @@ App({
             code: res.code
           }
         }
-        request(option).then((resl) => {
+        userApi.request(option).then((resl) => {
           console.log(resl)
           wx.setStorageSync('token', resl.data.token)
         }).catch((err) => {
