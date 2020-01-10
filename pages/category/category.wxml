@@ -1,0 +1,4 @@
+<!--pages/category/category.wxml-->
+<view class="w-category">
+我是分类页面页面
+</view>

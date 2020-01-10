@@ -1,0 +1,20 @@
+/* components/tabcontrol/TabControl.wxss */
+.tab-control {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab-control .item {
+  flex: 1;
+  text-align:center;
+}
+.tab-control .item .text{
+  color: #333;
+  padding: 20rpx 20rpx;
+  border-bottom: 2px solid transparent;
+}
+.tab-control .item.active .text{
+  color: #f5507e;
+  border-bottom-color: #f5507e;
+}

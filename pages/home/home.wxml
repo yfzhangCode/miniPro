@@ -1,2 +1,11 @@
-<!--pages/home/home.wxml-->
-<text class="container">Hello World!</text>
+<!-- 首页 -->
+<view class="w-home">
+  <!-- 轮播图 -->
+  <w-swiper bannerList="{{bannerList}}"/>
+  <!-- 推荐数据 -->
+  <w-recommend recommendList="{{recommendList}}"></w-recommend>
+  <!-- 流行数据 -->
+  <w-popular></w-popular>
+  <!-- tab nav 商品 -->
+  <tab-control currentIndex="{{tabIndex}}" tabs="{{tabs}}" bind:tabClick="tabClick"></tab-control>
+</view>

@@ -1,5 +1,7 @@
 /* pages/home/home.wxss */
-.container {
+.w-home .swiper {
+  height: 400rpx;
+}
+.w-home .swiper .item .item-img {
   width: 100%;
-  text-align: center;
 }

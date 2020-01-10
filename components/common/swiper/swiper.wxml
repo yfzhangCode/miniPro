@@ -1,0 +1,13 @@
+<swiper class="swiper"
+    autoplay
+    circular
+    indicator-dots="{{true}}"
+    indicator-color="#333"
+    indicator-active-color="#fafafa"
+    >
+    <block wx:for="{{bannerList}}" wx:key="index">
+      <swiper-item class="item" item-id="index">
+        <image class="item-img" src="{{item.image}}" lazy-load="{{true}}" mode="widthFix"/>
+      </swiper-item>
+    </block>
+  </swiper>

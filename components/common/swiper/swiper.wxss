@@ -1,0 +1,6 @@
+.swiper {
+  height: 300rpx;
+}
+.swiper .item .item-img {
+  width: 100%;
+}

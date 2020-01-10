@@ -1,66 +1,51 @@
-// pages/home/home.js
+// 引入 api 类
+import userApi from '../../http/index/user'
 Page({
-
   /**
-   * 页面的初始数据
+   * 定义基础数据
    */
   data: {
-
+    bannerList: [],
+    recommendList: [],
+    tabIndex: 0,
+    tabs: ['流行', '精选', '新款']
   },
-
   /**
-   * 生命周期函数--监听页面加载
+   * 监听页面得加载
+   * 
    */
-  onLoad: function (options) {
-
+  // 登录
+  onLoad () {
+    // 获取数据
+    this.getHomeData()
   },
+  // 获取首页数据
+  getHomeData() {
+    // 获取数据
+    let opt = {
+      token: ''
+    }
+    userApi._getHomeData(opt).then((res) => {
+      console.log(res)
+      // 获取首页数据
+      const bannerL = res.data.banner.list
+      const recommendL = res.data.recommend.list
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+      // 保存数据
+      this.setData({
+        bannerList: bannerL,
+        recommendList: recommendL
+      })
+    }).catch((err) => {
+      console.log(err)
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  // tab 切换
+  tabClick (e) {
+    // 设置当前标题
+    const currentIndex = e.detail.index
+    this.setData({
+      tabIndex: currentIndex
+    })
   }
 })

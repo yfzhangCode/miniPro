@@ -1,0 +1,4 @@
+<!--pages/profile/profile.wxml-->
+<view class="w-proflie">
+我是我的页面
+</view>
