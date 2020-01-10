@@ -1,5 +1,34 @@
 /* pages/home/home.wxss */
-.container {
+.h-container {
   width: 100%;
   text-align: center;
+  padding: 30rpx 0 30rpx 0;
+}
+.h-container .text-info {
+  font-size: 14px;
+  height: 20rpx;
+}
+.h-container .avator {
+  width: 100rpx;
+  height: 100rpx;
+}
+.h-container .img {
+  width: 200rpx;
+  height: 200rpx;
+}
+.h-container .scroll {
+  width: 100%;
+  white-space: nowrap;
+}
+.h-container .item {
+  width: 200rpx;
+  height: 200rpx;
+  display: inline-block;
+  background-color: lightblue;
+}
+.h-container .box {
+  width: 100rpx;
+}
+.title {
+  color: red;
 }

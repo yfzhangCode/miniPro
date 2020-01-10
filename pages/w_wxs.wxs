@@ -1,0 +1,8 @@
+function formatPrice(price, num) {
+  var num = num || 2;
+  price = parseFloat(price)
+  return price.toFixed(num)
+}
+module.exports = {
+  formatPrice: formatPrice
+}

@@ -1,0 +1,12 @@
+<!--components/tabnav/tabnav.wxml-->
+<view class="header">
+  <view class="nav nav-left">
+    <slot name="left"></slot>
+  </view>
+  <view class="nav nav-center">
+    <slot name="center"></slot>
+  </view>
+  <view class="nav nav-right">
+    <slot name="right"></slot>
+  </view>
+</view>

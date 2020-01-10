@@ -1,0 +1,10 @@
+/* components/tabnav/tabnav.wxss */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .nav {
+  flex: 1;
+  text-align: center;
+}

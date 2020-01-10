@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "bar": "/components/cpnts/bar",
+    "tab-nav": "/components/tabnav/tabnav",
+    "tab-control": "/components/tabcontrol/tabcontrol"
+  },
+  "navigationBarTitleText": "首页"
 }
