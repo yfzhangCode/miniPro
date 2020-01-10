@@ -8,7 +8,10 @@ Page({
     bannerList: [],
     recommendList: [],
     tabIndex: 0,
-    tabs: ['流行', '精选', '新款']
+    tabs: ['流行', '精选', '新款'],
+    goodsList: [],
+    type: 'sell',
+    page: 1
   },
   /**
    * 监听页面得加载
@@ -18,6 +21,8 @@ Page({
   onLoad () {
     // 获取数据
     this.getHomeData()
+    // 获取商品数
+    this.getGoodsData()
   },
   // 获取首页数据
   getHomeData() {
@@ -46,6 +51,26 @@ Page({
     const currentIndex = e.detail.index
     this.setData({
       tabIndex: currentIndex
+    })
+  },
+  // 或商品数据
+  getGoodsData() {
+    // 获取数据
+    let opt = {
+      type: this.data.type,
+      page: this.data.page,
+      token: ''
+    }
+    userApi._getHomeRecommendData(opt).then((res) => {
+      console.log(res)
+      // 获取首页数据
+      const goodsList = res.data.list
+      // 保存数据
+      this.setData({
+        goodsList: goodsList
+      })
+    }).catch((err) => {
+      console.log(err)
     })
   }
 })

@@ -8,4 +8,6 @@
   <w-popular></w-popular>
   <!-- tab nav 商品 -->
   <tab-control currentIndex="{{tabIndex}}" tabs="{{tabs}}" bind:tabClick="tabClick"></tab-control>
+  <!-- 商品展示 -->
+  <goods-list goodsList="{{goodsList}}"></goods-list>
 </view>
