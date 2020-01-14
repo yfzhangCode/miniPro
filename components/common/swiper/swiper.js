@@ -17,20 +17,5 @@ Component({
   data: {
   },
   methods: {
-  },
-  created: function(){
-    console.log(this)
-  },
-  attached: function(){
-
-  },
-  ready: function(){
-
-  },
-  moved: function(){
-
-  },
-  detached: function(){
-
-  },
+  }
 });

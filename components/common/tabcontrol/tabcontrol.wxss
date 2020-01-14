@@ -4,15 +4,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: sticky;
+  top: 0;
+  height: 45px;
+  background: #fff;
 }
 .tab-control .item {
   flex: 1;
   text-align:center;
+  background: #fff;
 }
 .tab-control .item .text{
   color: #333;
   padding: 20rpx 20rpx;
   border-bottom: 2px solid transparent;
+  background: #fff;
 }
 .tab-control .item.active .text{
   color: #f5507e;

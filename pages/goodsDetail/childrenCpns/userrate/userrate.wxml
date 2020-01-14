@@ -1,0 +1,28 @@
+<!--pages/goodsDetail/childrenCpns/userrate/userrate.wxml-->
+<view class="user-rate">
+  <block wx:for="{{userRateData.list}}" wx:key="index">
+    <view class="top">
+      <image class="user-avator" src="{{item.user.avatar}}"/>
+      <view class="user-name">{{item.user.uname}}</view>
+    </view>
+    <view class="center">
+      <view class="user-info">
+        <block wx:for="{{item.extraInfo}}" wx:key="index" wx:for-item="extra">
+          <text>{{extra}}</text>
+        </block>
+      </view>
+      <view class="text-info">{{item.content}}</view>
+    </view>
+    <view class="footer">
+      <view class="user-info">
+        <text class="create-time">{{item.created}}</text>
+        <text class="create-time">{{item.style}}</text>
+      </view>
+      <view class="user-images">
+        <block wx:for="{{item.images}}" wx:for-item="itemImg" wx:key="index">
+          <image class="goods-img" src="{{itemImg}}" />
+        </block>
+      </view>
+    </view>
+  </block>
+</view>

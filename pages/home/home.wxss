@@ -5,3 +5,7 @@
 .w-home .swiper .item .item-img {
   width: 100%;
 }
+.tab-control {
+  position: sticky;
+  top: 0;
+}

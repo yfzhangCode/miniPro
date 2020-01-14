@@ -1,0 +1,32 @@
+<!--pages/goodsDetail/childrenCpns/shopInfo/shopinfo.wxml-->
+<!-- wxs -->
+<wxs src="./../../../../utils/formatNum/formatnum.wxs" module="formatNums"></wxs>
+<view class="shop-info">
+    <view class="store-name-icon">
+      <image class="store-logo" src="{{goodsDetailInfo.shopInfo.shopLogo}}" />
+      <view class="name">{{goodsDetailInfo.shopInfo.name}}</view>
+    </view>
+    <view class="store-detail-info">
+      <view class="s-detail-info store-left">
+        <view class="sell csell">
+          <text>{{formatNums.formatNum(goodsDetailInfo.shopInfo.cSells, 2)}}万</text>
+          <text>总销量</text>
+        </view>
+        <view class="sell cgoods">
+          <text>{{goodsDetailInfo.shopInfo.cGoods}}</text>
+          <text>全部宝贝</text>
+        </view>
+        <view class="right-line"></view>
+      </view>
+      <view class="s-detail-info store-right">
+        <block wx:for="{{goodsDetailInfo.shopInfo.score}}" wx:key="index">
+          <view class="sotres">
+            <text class="score-title">{{item.name}}</text>
+            <text class="score-num {{item.isBetter?'score-high':''}}">{{item.score}}</text>
+            <text class="low" wx:if="{{!item.isBetter}}">低</text>
+            <text class="high" wx:elif="{{item.isBetter}}">高</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>

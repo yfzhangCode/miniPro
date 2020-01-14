@@ -22,7 +22,7 @@ export default class userApi extends baseapi {
   */
   static _getHomeData(options) {
     let opt = {
-      url: config.hostUrl + 'home/multidata',
+      url: config.hostUrl + '/home/multidata',
       method: 'GET',
       token: options.token
     }
@@ -38,13 +38,104 @@ export default class userApi extends baseapi {
    */
   static _getHomeRecommendData(options) {
     let opt = {
-      url: config.hostUrl + 'home/data',
+      url: config.hostUrl + '/home/data',
       method: 'GET',
       data: {
         type: options.type,
         page: options.page
       },
       token: options.token
+    }
+    return this.request(opt)
+  }
+
+  /**
+   * @static _getGoodsDetailInfo
+   * @returns this.request
+   * @param options
+   * 
+   * @memberOf userApi
+   */
+  static _getGoodsDetailInfo(options) {
+    let opt = {
+      url: config.hostUrl + '/detail',
+      method: 'GET',
+      data: {
+        iid: options.iid
+      },
+      token: options.token
+    }
+    return this.request(opt)
+  }
+
+  /**
+   * @static _getDetailRecommend
+   * @returns this.request
+   * @param options
+   * 
+   * @memberOf userApi
+   */
+  static _getDetailRecommend(options) {
+    let opt = {
+      url: config.hostUrl + '/recommend',
+      method: 'GET',
+      token: options.token
+    }
+    return this.request(opt)
+  }
+
+  /**
+   * @static _getCategoryData
+   * @returns this.request
+   * @param options
+   * 
+   * @memberOf userApi
+   */
+  static _getCategoryData(options) {
+    let opt = {
+      url: config.hostUrl + '/category',
+      method: 'GET',
+      data: {
+      },
+      token: options.token || ''
+    }
+    return this.request(opt)
+  }
+
+  /**
+   * @static _getSubCategoryData
+   * @returns this.request
+   * @param options
+   * 
+   * @memberOf userApi
+   */
+  static _getSubCategoryData(options) {
+    let opt = {
+      url: config.hostUrl + '/subcategory',
+      method: 'GET',
+      data: {
+        maitKey: options.maitKey
+      },
+      token: options.token
+    }
+    return this.request(opt)
+  }
+
+  /**
+   * @static _getCategoryDetailData
+   * @returns this.request
+   * @param options
+   * 
+   * @memberOf userApi
+   */
+  static _getCategoryDetailData(options) {
+    let opt = {
+      url: config.hostUrl + '/subcategory/detail',
+      method: 'GET',
+      data: {
+        miniWallkey: options.miniWallkey,
+        type: options.type
+      }
     }
     return this.request(opt)
   }

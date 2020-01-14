@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "detail-swiper": "/components/common/swiper/swiper",
+    "goods-info": "./childrenCpns/goodsInfo/goodsinfo",
+    "shop-info": "./childrenCpns/shopInfo/shopinfo",
+    "user-rate": "./childrenCpns/userrate/userrate",
+    "goods-params": "./childrenCpns/goodsParams/goodsparams",
+    "goods-recommend": "./childrenCpns/detailRecommend/detailrecommend",
+    "footer-cart": "./childrenCpns/footerCart/footercart"
+  },
+  "navigationBarTitleText": "商品详情"
+}

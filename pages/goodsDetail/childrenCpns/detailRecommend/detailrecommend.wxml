@@ -1,0 +1,4 @@
+<!--pages/goodsDetail/childrenCpns/detailRecommend/detailrecommend.wxml-->
+<view class="goods-recommend">
+  <goods-list goodsList="{{recommendList}}"/>
+</view>

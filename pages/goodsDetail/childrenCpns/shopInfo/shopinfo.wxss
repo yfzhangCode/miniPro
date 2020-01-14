@@ -1,0 +1,72 @@
+/* pages/goodsDetail/childrenCpns/shopInfo/shopinfo.wxss */
+.shop-info {
+  padding: 40rpx;
+  border-bottom: 12rpx solid #eee;
+}
+.shop-info .store-name-icon {
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.shop-info .store-name-icon .store-logo {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: #f4f4f4;
+  margin-right: 20rpx;
+}
+.shop-info .store-name-icon .name {
+  color: #333;
+}
+.shop-info .store-detail-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+}
+.shop-info .store-detail-info .s-detail-info {
+  flex: 1;
+  text-align: left;
+  padding: 0 30rpx;
+}
+.shop-info .store-detail-info .store-left {
+  position: relative;
+  text-align: center;
+  line-height: 50rpx;
+}
+.shop-info .store-detail-info .store-left::after {
+  content: '';
+  border-right: 1px solid #eee;
+  position: absolute;
+  height: 90%;
+  top: 20rpx;
+  right: 20rpx;
+}
+.shop-info .store-detail-info .store-left .sell {
+  font-size: 24rpx;
+  color: #666;
+}
+.shop-info .store-detail-info .store-left .sell text {
+  margin-right: 12rpx;
+}
+.shop-info .store-detail-info .store-right {
+  font-size: 24rpx;
+  color: #666;
+  line-height: 40rpx;
+}
+.shop-info .store-detail-info .store-right .sotres text{
+  margin-right: 12rpx;
+}
+.shop-info .store-detail-info .store-right .sotres .low{
+  color: #fff;
+  background-color: #5ea732;
+}
+.shop-info .store-detail-info .store-right .sotres .score-high {
+  color: #f13e3a;
+}
+.shop-info .store-detail-info .store-right .sotres .high {
+  color: #fff;
+  background-color: #f13e3a;
+}

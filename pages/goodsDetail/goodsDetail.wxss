@@ -1,0 +1,12 @@
+/* pages/goodsDetail/goodsDetail.wxss */
+.goods-detail {
+  height: calc(100vh - 120rpx)
+}
+.goods-detail .swiper {
+  height: 700rpx;
+  overflow: hidden;
+}
+
+
+
+

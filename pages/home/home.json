@@ -5,7 +5,9 @@
     "w-popular": "./childrenCpns/w-popular/w-popular",
     "tab-nav": "/components/common/tabnav/tabnav",
     "tab-control": "/components/common/tabcontrol/tabcontrol",
-    "goods-list": "/components/common/goodslist/goodslist"
+    "goods-list": "/components/common/goodslist/goodslist",
+    "back-top": "/components/common/backTop/backtop"
   },
+  "onReachBottomDistance": 20,
   "navigationBarTitleText": "购物街"
 }

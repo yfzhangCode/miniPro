@@ -1,0 +1,4 @@
+<!--components/common/backTop/backtop.wxml-->
+<view class="back-top">
+ <image class="top-img" src="/assets/img/common/top.png" />
+</view>

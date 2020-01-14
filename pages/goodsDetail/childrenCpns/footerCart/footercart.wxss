@@ -1,0 +1,64 @@
+/* pages/goodsDetail/childrenCpns/footerCart/footercart.wxss */
+.footer-cart {
+  height: 120rpx;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-around;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.footer-cart .left,
+.footer-cart .right {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+}
+.footer-cart .left,
+.footer-cart .right .add-cart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer-cart .left {
+  padding: 0 10rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  color: #333;
+  text-align: center;
+}
+.footer-cart .left .store-info{
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+.footer-cart .left .store-info .icon-img {
+  width: 60rpx; 
+  height: 60rpx;
+}
+.footer-cart .right .add-cart {
+  height: 100%;
+}
+.footer-cart .right .add-cart button{
+  flex: 1;
+  font-size: 28rpx;
+  border: none;
+  height: 100%;
+  outline: none;
+  line-height: 120rpx;
+  border-radius: 0;
+  color: #fff;
+}
+.footer-cart .right .add-cart button::after{
+  border: none;
+  outline: none;
+}
+.footer-cart .right .add-cart .add-goods-carts {
+  background-color: #eeee65;
+  color: #666;
+}
+.footer-cart .right .add-cart .buy {
+  background-color: #e93974;
+}
+
+

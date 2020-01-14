@@ -1,0 +1,22 @@
+<!--pages/goodsDetail/childrenCpns/goodsInfo/goodsinfo.wxml-->
+<view class="goods-info">
+    <view class="goods-title">{{goodsDetailInfo.title}}</view>
+    <view class="goods-price">
+      <text class="nowprice">{{goodsDetailInfo.realPrice}}</text>
+      <text class="oldprice">{{goodsDetailInfo.oldPrice}}</text>
+      <text class="discount">{{goodsDetailInfo.discount}}</text>
+    </view>
+    <view class="goods-sale">
+      <block wx:for="{{goodsDetailInfo.columns}}" wx:key="index">
+        <text class="colunms">{{item}}</text>
+      </block>
+    </view>
+    <view class="goods-service">
+      <block wx:for="{{goodsDetailInfo.services}}" wx:key="index">
+        <view class="service">
+          <image class="ser-icon" src="{{item.icon}}" />
+          <text class="service-title">{{item.name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>

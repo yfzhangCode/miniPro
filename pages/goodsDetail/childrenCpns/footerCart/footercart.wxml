@@ -1,0 +1,23 @@
+<!--pages/goodsDetail/childrenCpns/footerCart/footercart.wxml-->
+<view class="footer-cart">
+  <view class="left">
+    <view class="store-info service">
+      <image class="icon-img" src="/assets/img/detail/service.png"/>
+      <view>客服</view>
+    </view>
+    <view class="store-info store">
+      <image class="icon-img" src="/assets/img/detail/shop.png"/>
+      <view>店铺</view>
+    </view>
+    <view class="store-info cfav">
+      <image class="icon-img" src="/assets/img/detail/collect.png"/>
+      <view>收藏</view>
+    </view>
+  </view>
+  <view class="right">
+    <view class="add-cart">
+      <button class="add-goods-carts">加入购物车</button>
+      <button class="buy">购买</button>
+    </view>
+  </view>
+</view>

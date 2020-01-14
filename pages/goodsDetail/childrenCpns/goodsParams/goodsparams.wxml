@@ -1,0 +1,22 @@
+<!--pages/goodsDetail/childrenCpns/goodsParams/goodsparams.wxml-->
+<view class="goods-params">
+  <!-- table data -->
+  <block wx:for="{{goodsParamData.rule.tables}}" wx:key="index">
+    <view class="tables">
+      <block wx:for="{{item}}" wx:for-item="itemp" wx:key="itemp">
+        <view class="table-item">
+          <block wx:for="{{itemp}}" wx:for-item="size" wx:key="size">
+            <text>{{size}}</text> 
+          </block>
+        </view>
+      </block>
+    </view>
+  </block>
+  <!-- Params data -->
+  <block wx:for="{{goodsParamData.info.set}}" wx:key="index">
+    <view class="table-item">
+      <text>{{item.key}}</text>
+      <text class="prams-text">{{item.value}}</text>
+    </view>
+  </block>
+</view>

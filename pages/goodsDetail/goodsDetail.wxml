@@ -1,0 +1,18 @@
+<!--pages/goodsDetail/goodsDetail.wxml-->
+
+<scroll-view class="goods-detail" scroll-y="{{true}}">
+  <!-- 商品详情数据 -->
+  <detail-swiper bannerList="{{topImageList}}" />
+  <!-- 商品信息 -->
+  <goods-info goodsDetailInfo="{{goodsDetailInfo}}" />
+  <!-- 店铺信息 -->
+  <shop-info goodsDetailInfo="{{goodsDetailInfo}}" />
+  <!-- 用户评论 -->
+  <user-rate userRateData="{{userRateData}}"/>
+  <!-- 衣服尺码 -->
+  <goods-params goodsParamData="{{goodsParamData.paramsInfo}}" />
+  <!-- 商品推荐 -->
+  <goods-recommend recommendList="{{detailRecommendData}}"/>
+</scroll-view>
+<!-- 添加购物车 -->
+<footer-cart></footer-cart>

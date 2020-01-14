@@ -24,6 +24,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    // 点击商品详情数据
+    itemClick (e) {
+      let pram = e.currentTarget.dataset
+      // 子组件传递父组件事件， 数据
+      this.triggerEvent('itemClick', pram, {})
+    }
   }
 })

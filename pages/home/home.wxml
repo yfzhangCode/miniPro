@@ -7,7 +7,9 @@
   <!-- 流行数据 -->
   <w-popular></w-popular>
   <!-- tab nav 商品 -->
-  <tab-control currentIndex="{{tabIndex}}" tabs="{{tabs}}" bind:tabClick="tabClick"></tab-control>
+  <tab-control class="tab-control" currentIndex="{{tabIndex}}" tabs="{{tabs}}" bind:tabClick="tabClick"></tab-control>
   <!-- 商品展示 -->
-  <goods-list goodsList="{{goodsList}}"></goods-list>
+  <goods-list goodsList="{{goodsList[currentType].list}}" bind:itemClick="itemClick"></goods-list>
+  <!-- 返回顶部 -->
+  <back-top wx:if="{{showBackTop}}" bind:tap="bakTop"/>
 </view>
