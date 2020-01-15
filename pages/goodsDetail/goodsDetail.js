@@ -1,6 +1,7 @@
 // pages/goodsDetail/goodsDetail.js
 import userApi from '../../http/index/user.js'
 import { GoodsStoreInfo, GoodsDetailParams } from '../../utils/util.js'
+const app = getApp()
 Page({
 
   /**
@@ -33,7 +34,7 @@ Page({
     userApi._getGoodsDetailInfo(opt).then((res) => {
       console.log(res)
       // 获取商品详情数据
-      const goodsDetailInfos = new GoodsStoreInfo(res.result.itemInfo, res.result.columns, res.result.shopInfo)
+      const goodsDetailInfos = new GoodsStoreInfo(res.result.itemInfo, res.result.columns, res.result.shopInfo, res.result.itemInfo.topImages)
       // 获取店铺信息
       console.log(goodsDetailInfos)
       const topImages = res.result.itemInfo.topImages
@@ -53,15 +54,27 @@ Page({
   getRecommendData () {
     let opt = {}
     userApi._getDetailRecommend(opt).then((res) => {
-      console.log(res)
+      // console.log(res)
       // 获取推荐数据
       const dataList = res.data.list
-      console.log(dataList)
+      // console.log(dataList)
       this.setData({
         detailRecommendData: dataList
       })
     }).catch((err) => {
       console.log(err)
     })
+  },
+  // 添加购物车
+  addCart(e) {
+    // 弹框提示 加入购物车成功
+    app.showToast('商品成功加入购物车', 2000)
+    // 加入购物车
+    console.log(e)
+    app.addCartData(e.detail)
+  },
+  // 购买  跳转至购物车结算
+  Buy (e) {
+    console.log(e)
   }
 })

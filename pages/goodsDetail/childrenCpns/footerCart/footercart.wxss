@@ -41,7 +41,7 @@
 }
 .footer-cart .right .add-cart button{
   flex: 1;
-  font-size: 28rpx;
+  font-size: 24rpx;
   border: none;
   height: 100%;
   outline: none;

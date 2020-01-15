@@ -2,6 +2,7 @@ var formatNum = function(num, float) {
   var nums = parseFloat(num)
   return (nums / 1000).toFixed(float)
 }
+
 module.exports = {
   formatNum: formatNum
 }

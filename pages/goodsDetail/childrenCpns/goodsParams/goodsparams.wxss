@@ -17,3 +17,7 @@
 .goods-params .prams-text {
   color: #ff5777;
 }
+.goods-params .goods-title {
+  color: #333;
+  font-size: 28rpx;
+}

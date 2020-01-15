@@ -4,7 +4,8 @@
     <view class="goods-item"
       bindtap="itemClick"
       data-index="{{index}}"
-      data-iid="{{item.iid}}">
+      data-iid="{{item.iid || item.item_id}}"
+      data-urlLink="{{item.item_h5_url}}">
       <image class="goods-img" src="{{item.show.img || item.image}}"/>
       <view class="title">{{item.title}}</view>
       <view class="price-info">

@@ -1,5 +1,6 @@
 <!--pages/goodsDetail/childrenCpns/goodsParams/goodsparams.wxml-->
 <view class="goods-params">
+  <view class="goods-title">商品规格</view>
   <!-- table data -->
   <block wx:for="{{goodsParamData.rule.tables}}" wx:key="index">
     <view class="tables">

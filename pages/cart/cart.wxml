@@ -1,2 +1,13 @@
 <!--pages/cart/cart.wxml-->
-<view class="w-cart">我是购物车页面</view>
+<scroll-view class="w-cart" scroll-y="{{true}}">
+  <!-- 商品列表 -->
+  <cart-list cartlists="{{cartList}}" bind:cartItemClick="cartItemClick" />
+</scroll-view>
+<cart-bottom class="calc-money"
+  bind:slectAll="slectAll"
+  isAllflag="{{isAllflag}}"
+  cartListlength="{{cartLength}}"
+  totalMoney="{{totalMoney}}"
+></cart-bottom>
+
+

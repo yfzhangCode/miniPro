@@ -1,1 +1,6 @@
 /* pages/goodsDetail/childrenCpns/detailRecommend/detailrecommend.wxss */
+.goods-recommend .goods-title {
+  color: #333;
+  font-size: 28rpx;
+  padding: 20rpx 30rpx 0 30rpx;
+}

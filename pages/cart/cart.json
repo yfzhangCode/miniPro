@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "cart-list": "./childrenCpns/cartlist/cartlist",
+    "cart-bottom": "./childrenCpns/cartbottom/cartbottom"
+  }
 }

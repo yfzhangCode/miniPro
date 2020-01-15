@@ -8,6 +8,7 @@
   top: 0;
   height: 45px;
   background: #fff;
+  z-index: 9;
 }
 .tab-control .item {
   flex: 1;

@@ -10,7 +10,8 @@ App({
     }
   },
   golabData: {
-    token: ''
+    token: '',
+    cartList: []
   },
   // 验证登录是否过期
   authToken (token) {
@@ -47,5 +48,31 @@ App({
         })
       }
     })
+  },
+  // 全部弹窗
+  showToast (msg, dur) {
+    wx.showToast({
+      title: msg,
+      icon: 'none',
+      duration: dur
+    })
+  },
+  addCartData (obj) {
+    // console.log(obj)
+    const haveFlag = this.golabData.cartList.find(item => item.id === obj.id)
+    // console.log(haveFlag)
+    if (haveFlag) {
+      haveFlag.count += 1
+    } else {
+      obj.count = 1
+      obj.isCheck = false
+      // 储存数据
+      this.golabData.cartList.push(obj)
+      wx.setStorageSync('cartList', this.golabData.cartList)
+    }
+    // 2.购物车回调
+    if (this.addCartCallback) {
+      this.addCartCallback()
+    }
   }
 })

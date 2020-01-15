@@ -1,0 +1,23 @@
+<!-- 购物车 -->
+<view class="cart-list" wx:if="cartlists.length > 0">
+  <block wx:for="{{cartlists}}" wx:key="index">
+    <view class="item-lits"
+      bindtap="cartItemClick"
+      data-index="{{index}}"
+      data-item="{{item}}"
+    >
+      <view class="checkbox {{item.isCheck?'checked':''}}">√</view>
+      <view class="goods-img">
+        <image class="img" src="{{item.img}}" mode="widthFix"/>
+      </view>
+      <view class="goods-info">
+        <view class="title">{{item.title}}</view>
+        <view class="desc">{{item.desc}}</view>
+        <view class="count-price">
+          <text class="price">{{item.price}}</text>
+          <text class="count">x{{item.count}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

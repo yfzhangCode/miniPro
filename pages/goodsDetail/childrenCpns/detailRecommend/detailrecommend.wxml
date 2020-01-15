@@ -1,4 +1,5 @@
 <!--pages/goodsDetail/childrenCpns/detailRecommend/detailrecommend.wxml-->
 <view class="goods-recommend">
-  <goods-list goodsList="{{recommendList}}"/>
+  <view class="goods-title">商品推荐</view>
+  <goods-list goodsList="{{recommendList}}" bind:itemClick="itemClick"/>
 </view>

@@ -8,7 +8,7 @@ Component({
       type: Array,
       value: [],
       observer: (newV, oldV) => {
-        console.log(newV)
+        // console.log(newV)
       }
     }
   },
@@ -26,6 +26,7 @@ Component({
   methods: {
     // 点击商品详情数据
     itemClick (e) {
+      // console.log(e)
       let pram = e.currentTarget.dataset
       // 子组件传递父组件事件， 数据
       this.triggerEvent('itemClick', pram, {})

@@ -22,8 +22,10 @@ const formatNumber = n => {
  */
 export class GoodsStoreInfo {
   // constructor 容器
-  constructor(itemInfo, columns, shopInfo) {
+  constructor(itemInfo, columns, shopInfo, topImages) {
+    this.iid = itemInfo.iid
     this.title = itemInfo.title
+    this.image = topImages[0]
     this.desc = itemInfo.desc
     this.newPrice = itemInfo.price
     this.oldPrice = itemInfo.oldPrice

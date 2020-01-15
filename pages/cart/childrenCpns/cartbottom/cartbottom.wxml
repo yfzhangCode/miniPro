@@ -1,0 +1,16 @@
+<wxs src="./../../../../utils/formatNum/formatnum.wxs" module="format"></wxs>
+<!--pages/cart/childrenCpns/cartbottom/cartbottom.wxml-->
+<view class="take-money">
+  <!-- 计算价格 -->
+  <view class="left {{isAllflag?'checked':''}}" bindtap="allChecked">
+    <text class="all-icon">√</text>
+    <text class="select-btn">全选</text>
+  </view>
+  <view class="center">
+    <text>总计：</text>
+    <text class="total-money">￥{{totalMoney}}</text>
+  </view>
+  <view class="right">
+    <button class="btn">去计算({{cartListlength}})</button>
+  </view>
+</view>

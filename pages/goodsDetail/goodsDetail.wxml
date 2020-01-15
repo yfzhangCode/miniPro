@@ -15,4 +15,8 @@
   <goods-recommend recommendList="{{detailRecommendData}}"/>
 </scroll-view>
 <!-- 添加购物车 -->
-<footer-cart></footer-cart>
+<footer-cart
+  goodsInfo="{{goodsDetailInfo}}"
+  bind:addCart="addCart"
+  bind:Buy="Buy"
+  ></footer-cart>

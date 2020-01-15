@@ -1,0 +1,57 @@
+/* pages/cart/childrenCpns/cartbottom/cartbottom.wxss */
+.take-money {
+  display: flex;
+  align-items: center;
+  height: 88rpx;
+}
+.take-money .box {
+  flex: 1;
+}
+.take-money .left {
+  padding-left: 30rpx;
+  box-sizing: border-box;
+}
+.take-money .left .all-icon {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #fff;
+  margin-right: 10rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+}
+.take-money .checked .all-icon{
+  background-color: #ff5777;
+}
+.take-money .left,
+.take-money .center {
+  background-color: #eee;
+  height: 100%;
+  width: 35%;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+}
+.take-money .center .total-money {
+
+}
+.take-money .right {
+  width: 30%;
+  height: 100%;
+  background-color: #e65d0e;
+}
+.take-money .right .btn {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  background-color: #e65d0e;
+  color: #fff;
+  height: 100%;
+}
+.take-money .right .btn::after {
+  border: none;
+  outline: none;
+}

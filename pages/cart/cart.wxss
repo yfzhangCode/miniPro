@@ -1,1 +1,8 @@
 /* pages/cart/cart.wxss */
+.w-cart {
+  height: calc(100vh - 88rpx);
+}
+.w-cart .calc-money {
+  height: 88rpx;
+  line-height: 88rpx;
+}
