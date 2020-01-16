@@ -1,4 +1,18 @@
 <!--pages/category/category.wxml-->
 <view class="w-category">
-我是分类页面页面
+  <view class="side-bar">
+    <!-- 侧边导航 -->
+    <side-bar
+      sidebarData="{{sideBarList}}"
+      bind:navClick="navClick"
+    />
+  </view>
+  <view class="right">
+    <scroll-view scroll-y="{{true}}" class="content">
+      <!-- 分类 -->
+      <categories categoryContent="{{cateGories}}" />
+      <!-- 分类商品 -->
+      <cate-goods cateGoodslist="{{cateGoodsList}}" />
+    </scroll-view>
+  </view>
 </view>

@@ -1,1 +1,83 @@
 /* pages/profile/profile.wxss */
+.w-proflie .user-info {
+  border-bottom: 20rpx solid #eee;
+}
+.w-proflie .user-info .login-info {
+  background-color: #ff5777;
+  display: flex;
+  align-items: center;
+  padding: 40rpx 30rpx;
+  box-sizing: border-box;
+}
+.w-proflie .user-info .login-info .user-avator {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: #eee;
+  margin-right: 30rpx;
+}
+.w-proflie .user-info .login-info .login-resigter {
+  color: #fff;
+  line-height: 50rpx;
+}
+.w-proflie .user-info .login-info .login-resigter .login-btn {
+  padding: 0 4rpx;
+}
+.w-proflie .user-info .login-info .login-resigter .phone-info .icon-phone {
+  width: 34rpx;
+  height: 34rpx;
+  vertical-align: middle;
+}
+.w-proflie .user-info .login-info .right {
+  position: relative;
+  left: 30%;
+}
+.w-proflie .user-info .login-info .right-arrow {
+  width: 52rpx;
+  height: 52rpx;
+}
+.w-proflie .user-info .intersests {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+.w-proflie .user-info .intersests .inter-box {
+  text-align: center;
+}
+.w-proflie .user-info .intersests .inter-box .nums {
+  color: #ff5777;
+  font-size: 28rpx;
+  margin-bottom: 8rpx;
+}
+.w-proflie .user-info .intersests .inter-box .title-text {
+  color: #666;
+  font-size: 28rpx;
+}
+.w-proflie .user-info .intersests .user-card {
+  border-left: 4rpx solid #eee;
+  border-right: 4rpx solid #eee;
+  padding: 40rpx 66rpx;
+  box-sizing: border-box;
+}
+.w-proflie .message {
+  border-bottom: 20rpx solid #eee; 
+}
+.w-proflie .user-msg {
+  padding: 30rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  color: #666;
+  border-bottom: 2rpx solid #eee;
+}
+.w-proflie .user-msg .img {
+  width: 50rpx;
+  height: 48rpx;
+  vertical-align: middle;
+  margin-right: 16rpx;
+  position: relative;
+  top: -2rpx;
+}
+
+

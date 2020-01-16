@@ -1,0 +1,11 @@
+<!--pages/category/childrenCpns/sidebar/sidebar.wxml-->
+<scroll-view class="side-bar" scroll-y="{{true}}">
+  <block wx:for="{{sidebarData}}" wx:key="index">
+    <view class="item-nav {{index===currentIndex?'avtive-nav':''}}"
+      data-index="{{index}}"
+      data-maitkey="{{item.maitKey}}"
+      data-miniWallkey="{{item.miniWallkey}}"
+      bindtap="navClick"
+      >{{item.title}}</view>  
+  </block>
+</scroll-view>

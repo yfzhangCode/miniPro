@@ -23,6 +23,8 @@ App({
     }
     userApi.request(option).then((res) => {
       console.log(res)
+      const obj = { name: 'demo'}
+      wx.setStorageSync('userInfo', obj)
       console.log('已登录')
     }).catch((err) => {
       console.log(err)
@@ -30,23 +32,29 @@ App({
   },
   // 登录方法
   login () {
-    wx.login({
-      success(res) {
-        console.log(res)
-        let option = {
-          url: 'http://123.207.32.32:3000/login',
-          method: 'POST',
-          data: {
-            code: res.code
+    return new Promise((resolve, reject) => {
+      wx.login({
+        success(res) {
+          console.log(res)
+          let option = {
+            url: 'http://123.207.32.32:3000/login',
+            method: 'POST',
+            data: {
+              code: res.code
+            }
           }
+          userApi.request(option).then((resl) => {
+            console.log(resl)
+            wx.setStorageSync('token', resl.token)
+            const obj = { name: 'demo', token: resl.token}
+            wx.setStorageSync('userInfo', obj)
+            resolve(obj)
+          }).catch((err) => {
+            console.log(err)
+            reject(err)
+          })
         }
-        userApi.request(option).then((resl) => {
-          console.log(resl)
-          wx.setStorageSync('token', resl.data.token)
-        }).catch((err) => {
-          console.log(err)
-        })
-      }
+      })
     })
   },
   // 全部弹窗

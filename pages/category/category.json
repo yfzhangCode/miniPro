@@ -1,3 +1,7 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "side-bar": "./childrenCpns/sidebar/sidebar",
+    "categories": "./childrenCpns/categories/categories",
+    "cate-goods": "./childrenCpns/categoods/categoods"
+  }
 }

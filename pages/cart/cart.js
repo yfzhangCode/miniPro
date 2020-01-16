@@ -17,7 +17,8 @@ Page({
    */
   onLoad (options) {
     // 获取购物车数据
-    const lists = app.golabData.cartList || []
+    let lists = app.golabData.cartList || []
+    if (app.golabData.cartList.length === 0) { lists = wx.getStorageSync('cartList') } 
     if (lists.length !== 0) {
       // 购物车为空
       this.setData({

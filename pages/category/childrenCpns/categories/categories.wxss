@@ -1,0 +1,22 @@
+/* pages/category/childrenCpns/categories/categories.wxss */
+.category-content {
+  display: flex;
+  padding: 30rpx 0 0 30rpx;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.category-content .item-ctn {
+  width: 30%;
+  text-align: center;
+  margin: 0 8rpx 10rpx 8rpx;
+}
+.category-content .item-ctn .img {
+  width: 160rpx;
+  margin-bottom: 10rpx
+}
+.category-content .item-ctn .title {
+  font-size: 28rpx;
+  color: #333;
+}

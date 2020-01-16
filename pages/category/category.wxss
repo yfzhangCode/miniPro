@@ -1,1 +1,14 @@
 /* pages/category/category.wxss */
+.w-category {
+  display: flex;
+  justify-content: space-between;
+}
+.w-category .content {
+  height: 100vh;
+}
+.w-category .side-bar {
+  width: 25%
+}
+.w-category .right {
+  width: 75%;
+}

@@ -1,0 +1,4 @@
+<!--pages/category/childrenCpns/categoods/categoods.wxml-->
+<view class="category-list">
+  <goods-list goodsList="{{cateGoodslist}}" />
+</view>

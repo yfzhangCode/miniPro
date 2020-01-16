@@ -1,0 +1,9 @@
+<!--pages/category/childrenCpns/categories/categories.wxml-->
+<view class="category-content">
+  <block wx:for="{{categoryContent}}" wx:key="index">
+    <view class="item-ctn">
+      <image src="{{item.image}}" class="img" mode="widthFix" />
+      <view class="title">{{item.title}}</view>
+    </view>
+  </block>
+</view>

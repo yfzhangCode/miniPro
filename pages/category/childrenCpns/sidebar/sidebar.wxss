@@ -1,0 +1,16 @@
+/* pages/category/childrenCpns/sidebar/sidebar.wxss */
+.side-bar {
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+}
+.side-bar .item-nav {
+  text-align: center;
+  padding: 30rpx 0;
+  border-left: 6rpx solid transparent;
+}
+.side-bar .avtive-nav {
+  background-color: #fafafa;
+  color: #ff5777;
+  border-color: #ff5777;
+}

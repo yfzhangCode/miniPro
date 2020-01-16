@@ -69,6 +69,19 @@
 					"pathName": "pages/cart/cart",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/category/category",
+					"pathName": "pages/category/category",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/profile/profile",
+					"pathName": "pages/profile/profile",
+					"scene": null
 				}
 			]
 		}
